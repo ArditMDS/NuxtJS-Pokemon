@@ -20,7 +20,7 @@ function selectType(type) {
 
 const filteredPokemons = computed(() => {
   if (!selectedType.value) {
-    return pokemons.value; // Return all if no type is selected
+    return pokemons.value;
   }
   return pokemons.value.filter(pokemon => pokemon.apiTypes.some(apiType => apiType.name === selectedType.value));
 });
