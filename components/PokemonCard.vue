@@ -21,13 +21,13 @@ function deleteFromTeam() {
 
 <template>
   <div class="relative">
-    <NuxtLink class=" flex justify-center text-center w-full" :to="link">
+    <NuxtLink class=" flex justify-center text-center w-full hover:bg-red-700" :to="link">
       <article class="border border-red-600 w-full">
         <img :src="image" :alt="name" class="w-40 h-40"/>
         <h2 class="font-bold">{{ name }}</h2>
       </article>
     </NuxtLink>
-    <button v-if="addable" @click="addToTeam" class="bg-red-700 text-white absolute px-2 top-0 right-0 h-full">Ajouter</button>
+    <button v-if="addable" @click="addToTeam" class="bg-red-700 text-white absolute px-2 top-0 right-0 h-full hover:bg-red-300">Ajouter</button>
     <button v-if="!addable" @click="deleteFromTeam" class="bg-red-700 text-white absolute px-2 top-0 right-0 h-full">Supprimer</button>
   </div>
 </template>

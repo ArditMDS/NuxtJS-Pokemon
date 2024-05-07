@@ -15,7 +15,7 @@ onMounted(async () => {
 
 <template>
 <div class="flex justify-center flex-col">
-  <h1 class="text-2xl text-center my-8">Applis pokemon de fou</h1>
+  <h1 class="text-2xl text-center my-8">Le Maxi Pokedex</h1>
   <input class="border border-black mx-10" type="text" placeholder="Chercher un pokémon par nom">
   <div class="grid grid-cols-12 mt-8 px-10">
     <TypeCard v-for="type in types" :name="type.name" :image="type.image"></TypeCard>
